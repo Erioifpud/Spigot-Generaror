@@ -3,7 +3,7 @@
 
 name: Build Spigot Jar
 env:
-    latest: '1.17.1'
+    latest: '1.19.2'
 
 on:
     workflow_dispatch:
@@ -142,7 +142,6 @@ jobs:
     upload_and_dist:
         needs:
             - build_on_java16
-            - build_on_java8
 
         runs-on: ubuntu-latest
 
